@@ -39,3 +39,32 @@ body {
     float: right;
   }
   
+  /* My Ruleset */
+  .card header, .card footer {
+    height: 30px;
+    padding: 10px;
+  } 
+
+  h2, p {
+    margin: 0;
+  }
+
+.card article {
+  height: 120px;
+  background-color:rgba(0,0,0,0.5);
+}
+
+h2 {
+  font-size: 20px;
+  line-height: normal;
+}
+
+.card footer p {
+  font-size: 15px;
+  line-height: 2;
+}
+
+.card article p {
+  padding: 10px;
+  color: whitesmoke;
+}
