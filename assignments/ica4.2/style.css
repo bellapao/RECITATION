@@ -41,8 +41,8 @@ body {
   
   /* My Ruleset */
   .card header, .card footer {
-    height: 30px;
-    padding: 10px;
+    height: 3em;
+    padding: 1em;
   } 
 
   h2, p {
@@ -50,21 +50,21 @@ body {
   }
 
 .card article {
-  height: 120px;
+  height: 12em;
   background-color:rgba(0,0,0,0.5);
 }
 
 h2 {
-  font-size: 20px;
+  font-size: 2em;
   line-height: normal;
 }
 
 .card footer p {
-  font-size: 15px;
+  font-size: 1.5em;
   line-height: 2;
 }
 
 .card article p {
-  padding: 10px;
+  padding: 1em;
   color: whitesmoke;
 }
