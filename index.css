@@ -1,5 +1,9 @@
 nav {
-    background-color: rgb(9, 99, 203);
+    background-color: #CFF0E1;
     padding: .5em;
     float: right
   }
+
+h1 {
+    font-display: Bebas Neue;
+}
