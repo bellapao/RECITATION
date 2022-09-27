@@ -7,6 +7,17 @@ nav {
     padding: .5em;
     float: right;
   }
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+nav a {
+    color: #607069;
+    text-decoration: none;
+    padding: .5em 1em;
+  }
 
 h1 {
     font-family: bebas neue;
