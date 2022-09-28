@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
 body {
     background-color: #607069;
 }
@@ -44,5 +45,5 @@ h6 {
 }
 
 p {
-    font-family: play;
+    font-family: 'Play', sans-serif;
 }
