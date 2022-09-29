@@ -47,3 +47,14 @@ h6 {
 p {
     font-family: 'Play', sans-serif;
 }
+
+@media only screen and (max-width: 1900px ){
+body {
+  background-color: #a2bdb1;  
+}}
+
+@media only screen and (max-width: 400px ){
+    body{
+        background-color: #607069;
+    }
+}
