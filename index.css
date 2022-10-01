@@ -1,12 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
-body {
-    background-color: #607069;
-}
+
+
 
 nav {
     background-color: #CFF0E1;
     padding: .5em;
-    float: right;
   }
 nav ul {
     margin: 0;
@@ -24,36 +22,17 @@ h1 {
     font-family: bebas neue;
 }
 
-h2 {
-    font-family: anton;
-}
-
-h3 {
-    font-family: abril fatface;
-}
-
-h4 {
-    font-family: permanent marker;
-}
-
-h5 {
-    font-family: shadows into light;
-}
-
-h6 {
-    font-family: urbanist;
-}
-
 p {
     font-family: 'Play', sans-serif;
 }
+
 
 @media only screen and (max-width: 1900px ){
 body {
   background-color: #a2bdb1;  
 }}
 
-@media only screen and (max-width: 400px ){
+@media only screen and (max-width: 600px ){
     body{
         background-color: #607069;
     }
