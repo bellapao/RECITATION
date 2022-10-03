@@ -5,11 +5,15 @@
 nav {
     background-color: #CFF0E1;
     padding: .5em;
+
+
   }
 nav ul {
-    margin: 0;
+    margin: 5;
     padding: 0;
     list-style: none;
+    display: flex;
+    justify-content: space-evenly;
   }
   
 nav a {
@@ -17,6 +21,13 @@ nav a {
     text-decoration: none;
     padding: .5em 1em;
   }
+
+header > h1 {
+  font-size: 6rem;
+  font-family: bebas neue;
+  padding: 20px;
+  padding-top: 0px;
+}
 
 h1 {
     font-family: bebas neue;
@@ -26,6 +37,12 @@ p {
     font-family: 'Play', sans-serif;
 }
 
+.box {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+}
 
 @media only screen and (max-width: 1900px ){
 body {
@@ -35,5 +52,9 @@ body {
 @media only screen and (max-width: 600px ){
     body{
         background-color: #607069;
+    }
+    .box{
+      display:flex;
+      flex-direction: column;
     }
 }
