@@ -37,11 +37,11 @@ p {
     font-family: 'Play', sans-serif;
 }
 
+
 .box {
   display: flex;
-  justify-content: space-around;
-  flex-direction: row;
-  align-items: center;
+  justify-content: center;
+  gap: 20px;
 }
 
 @media only screen and (max-width: 1900px ){
@@ -56,5 +56,7 @@ body {
     .box{
       display:flex;
       flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
 }
