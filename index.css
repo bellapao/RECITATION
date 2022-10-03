@@ -5,8 +5,6 @@
 nav {
     background-color: #CFF0E1;
     padding: .5em;
-
-
   }
 nav ul {
     margin: 5;
@@ -25,8 +23,7 @@ nav a {
 header > h1 {
   font-size: 6rem;
   font-family: bebas neue;
-  padding: 20px;
-  padding-top: 0px;
+  padding-left: 20px;
 }
 
 h1 {
@@ -37,17 +34,17 @@ p {
     font-family: 'Play', sans-serif;
 }
 
-
-.box {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-}
-
 @media only screen and (max-width: 1900px ){
 body {
   background-color: #a2bdb1;  
-}}
+}
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+}
 
 @media only screen and (max-width: 600px ){
     body{
