@@ -9,15 +9,6 @@ p {
     font-family: 'Play', sans-serif;
 }
 
-footer {
-  text-align: center;
-}
-
-footer a{
-  color: navy
-}
-/* found online to put nav+header in-line but still having trouble */
-
 header {
   position:relative;
   display:flex;
@@ -55,20 +46,28 @@ header nav a {
   color: #607069;
   text-decoration: none;
   padding: .5em 1em;
+  font-family: bebas neue;
+  font-size: 1.5em;
 }
-
 
 nav{
   display: inline-flex;
   justify-content: space-evenly;
-
 }
 
 nav a:hover{
   color: white;
 }
 
-/* end */
+footer {
+  text-align: center;
+}
+
+footer a{
+  font-family: bebas neue;
+  font-size: 2rem;
+  color: navy
+}
 
 
 @media only screen and (max-width: 1900px ){
@@ -85,6 +84,7 @@ body {
   width: 100%;
   margin: 20px;
 }
+
 }
 
 @media only screen and (max-width: 600px ){
