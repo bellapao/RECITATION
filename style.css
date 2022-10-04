@@ -95,8 +95,8 @@ footer a:active{
 
 @media only screen and (max-width: 1900px ){
 body {
-  background-color: #a2bdb1;  
-  background-color: whitesmoke;
+  background-color: #a2bdb1;
+  background-color: #f0ffff;
 
 }
 .Home {
@@ -133,4 +133,5 @@ body {
 
 .box p {
   margin-left: 2em;
+  align-self: center;
 }
