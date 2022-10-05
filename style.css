@@ -1,12 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Manrope&family=Noto+Sans+JP&family=Noto+Sans+TC:wght@400;500&family=Play&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500&family=Manrope&family=Noto+Sans+JP&family=Noto+Sans+TC:wght@400;500&family=Play&display=swap');
 
 h1 {
     font-family: bebas neue;
 }
-
+h2{
+  font-family: Caveat;
+}
 p {
-    font-family: 'Play', sans-serif;
+    font-family: 'Manrope';
+    font-size: 1.2em;
 }
 
 header {
@@ -75,7 +79,7 @@ footer {
 footer a{
   font-family: bebas neue;
   font-size: 2rem;
-  color: navy
+  color: black;
 }
 footer a:link{
   text-decoration: none;
@@ -110,6 +114,7 @@ footer a:active{
 }
 .eld{
   grid-column-start: 3;
+  filter:invert(3);
 }
 
 
