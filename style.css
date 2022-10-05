@@ -155,7 +155,7 @@ body {
     background-color: #f0ffff;
   }
   header nav a {
-    size: .5em;
+    font-size: 1em;
     padding: .5em;
   }
  .box{
