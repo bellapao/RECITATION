@@ -1,7 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Manrope&family=Noto+Sans+JP&family=Noto+Sans+TC:wght@400;500&family=Play&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500&family=Manrope&family=Noto+Sans+JP&family=Noto+Sans+TC:wght@400;500&family=Play&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Caveat:wght@400;500&family=Manrope&family=Noto+Sans+TC:wght@400;500&family=Permanent+Marker&family=Urbanist:wght@300&display=swap');
 h1 {
     font-family: bebas neue;
 }
@@ -114,10 +112,31 @@ footer a:active{
 }
 .eld{
   grid-column-start: 3;
-  filter:invert(3);
 }
 
+/* Contact */
+.nametag{
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+.info{
+  grid-column-start: 2;
+  margin-left: 5px;
+}
+.info a{
+  color: black;
+}
+/* Photography */
 
+.photography{
+  display:flex;
+  justify-content: center;
+}
+.photography ul{
+  list-style: none;
+  font-family: Anton;
+  font-size: 2rem;
+}
 
 @media only screen and (min-width: 1000px ){
 body {
@@ -141,6 +160,10 @@ body {
 .Bella{
   font-size: 6rem;
 }
+.photography ul a{
+  color: black;
+  text-decoration: none;
+}
 }
 
 @media only screen and (min-width: 599px)and (max-width:999px){
@@ -160,6 +183,22 @@ body {
   }
  .box{
   background-color: #f0ffff;
+ }
+ .nametag{
+  color: #f0ffff;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 1fr 3fr;
+ }
+ .info {
+  grid-column-start: 1;
+  grid-row-start: 1;
+ }
+ .info a{
+  color: #f0ffff;
+ }
+ .mountain{
+  grid-row-start: 2;
  }
 }
 
@@ -210,5 +249,18 @@ body {
       grid-row-start: 2;
       align-self: center;
     }
-    
+    .info {
+      grid-column-start: 1;
+      grid-row-start: 1;
+     }
+     .info a{
+      color: black;
+     }
+     .mountain{
+      grid-row-start: 2;
+     }
+     .photography ul a{
+      color: #CFF0E1;
+      text-decoration: none;
+    }
 }
