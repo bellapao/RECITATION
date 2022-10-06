@@ -138,6 +138,13 @@ footer a:active{
   font-size: 2rem;
 }
 
+#concert{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
 @media only screen and (min-width: 1000px ){
 body {
   background-color: #f0ffff;
@@ -260,7 +267,7 @@ body {
       grid-row-start: 2;
      }
      .photography ul a{
-      color: #CFF0E1;
+      color: black;
       text-decoration: none;
     }
 }
