@@ -125,11 +125,11 @@ footer a:active{
 }
 /* Photography */
 
-.photography{
+.contents{
   display:flex;
   justify-content: center;
 }
-.photography ul{
+.contents ul{
   list-style: none;
   font-family: Anton;
   font-size: 2rem;
@@ -163,7 +163,7 @@ body {
 .Bella{
   font-size: 6rem;
 }
-.photography ul a{
+.contents ul a{
   color: #A32015;
 }
 }
@@ -261,7 +261,7 @@ body {
      .mountain{
       grid-row-start: 2;
      }
-     .photography ul a{
+     .contents ul a{
       color: black;
       text-decoration: none;
     }
