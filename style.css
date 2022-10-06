@@ -101,6 +101,10 @@ footer a:active{
   margin: 0;
   padding: 0;
 }
+.disco{
+  grid-column-start: 3;
+  padding-left: 6rem;
+}
 
 /* Contact */
 .nametag{
