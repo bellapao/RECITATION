@@ -134,14 +134,7 @@ footer a:active{
   font-family: Anton;
   font-size: 2rem;
 }
-
-#madeinTYO{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-#mellowpunk{
+.container{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
