@@ -102,6 +102,7 @@ footer a:active{
   padding: 0;
 }
 
+
 .vase{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -184,8 +185,11 @@ body {
     padding: .5em;
   }
  .box{
-  background-color: #f0ffff;
- }
+  background-color: #f0ffff;}
+  .box p{
+    padding-left: 1em;
+  }
+
  .nametag{
   color: #f0ffff;
   display: grid;
@@ -242,14 +246,14 @@ body {
     }
     .box{
       display: grid;
-      grid-template-rows: 1fr 1fr 1fr;
-      align-items: center;
+      grid-template-rows: 1fr 1fr;
     }
 
     .box p{
       grid-column-start: 1;
       grid-row-start: 2;
       align-self: center;
+      padding-left: 2em;
     }
     .info {
       grid-column-start: 1;
