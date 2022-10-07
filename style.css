@@ -114,7 +114,7 @@ footer a:active{
 }
 .info{
   grid-column-start: 2;
-  margin-left: 5px;
+  margin-left: 2rem;
 }
 .info a{
   color: black;
