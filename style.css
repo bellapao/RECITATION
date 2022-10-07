@@ -30,7 +30,8 @@ header {
   padding-left: 20px;
 }
 .Bella a{
-  color: black
+  color: black;
+  font-family: bebas neue;
 }
 .Bella a:link{
   text-decoration: none;
