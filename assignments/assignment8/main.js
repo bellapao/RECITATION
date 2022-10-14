@@ -17,8 +17,8 @@ const insertX = [
     "Charlie Brown"]
 
 const insertY = [
-    "thrift store",
-    "Winter Park",
+    "grocey store",
+    "Boulde Creek",
     "Fox Theater"];
 
 const insertZ = [
