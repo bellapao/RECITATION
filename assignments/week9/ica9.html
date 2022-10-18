@@ -40,41 +40,22 @@
 
     <script>
         const btn = document.querySelector('button');
-        btn.addEventListener('click', () => displayMessage('Your inbox is almost full — delete some mails', 'warning'));
-        // calling code in response to a button being clicked 
-        // calling an anonymous function with the empty () => if we want to specify parameters inside parentheses for the function we are calling
-        // anonymous function so that it isn't in the immediate scope and therefore isn't called immediately, only called until tthe buttotn is clicked
-        
+        btn.addEventListener('click', () => displayMessage('Brian: Hi there, how are you today?','chat'));
 
       function displayMessage(msgText, msgType) {
-        //Any parameters we want to give to our function go inside the parentheses
-        //and the code that runs when we call the function goes inside the curly braces.
-        //now when we caall the function, we can provide two variable values inside the parentheses 
-        //to specify the message in the message box, and the type of message it is 
-    const body = document.body;
-        //selects the body element and assigning that to a constant called body so we can do things to it later
-
+        const body = document.body;
+     
         const panel = document.createElement('div');
-        // create a div and store a reference to it in a constant called panel
-        // will be the outer container of our message box
+   
         panel.setAttribute('class','msgBox');
-        // element.setAttribute()
-        // sets a class attribute on our panel with a value of msgBox
-
+   
         body.appendChild(panel);
-        // node.appendChild()
-        // apply to the body constant from earlier
-        // nests one element inside the other as a child of it 
-        // specify the panel as the child to append inside the body element 
-        // need to specify where to put the element (body)
 
         const msg = document.createElement('p');
         msg.textContent = msgText;
         panel.appendChild(msg);
 
         const closeBtn = document.createElement('button');
-        //close the message box by deleting the whole panel from pg
-        // addEventListener() method is provided by the button 
         closeBtn.textContent = 'x';
         panel.appendChild(closeBtn);
 

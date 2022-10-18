@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Function start</title>
+    <style>
+      .msgBox {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 200px;
+        background: #eee;
+      }
+
+      .msgBox p {
+        line-height: 1.5;
+        padding: 10px 20px;
+        color: #333;
+      }
+
+      .msgBox button {
+        background: none;
+        border: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+        font-size: 1.1rem;
+        color: #aaa;
+      }
+
+    </style>
+  </head>
+  <body>
+    <button>Display message box</button>
+
+    <script>
+        const btn = 
+        document.querySelector('button');
+
+        btn.addEventListener('click', () => displayMessage ("Hey Sexy",'chat'));
+        // calling the function in response to the button being clicked
+        // anonymous function with the empty ()
+        // anonymous function to specify parameters inside parentheses for the function we are calling so that it isn't in the immediate scope, only called until the button is clicked
+
+
+      function displayMessage(msgText, msgType){
+        // any parameters we want to give to our function go inside the parentheses 
+        // and the code that runs when we call goes inside {}
+        // now with (msgText, msgType), we can provide two variable values inside the parentheses to specify the message
+        // to specify the message in the message box and the type of message it is 
+        const body = document.body;
+        // selects the body element
+        // body property of the global document object and assigning that to a constant called body so we can do things to it later on
+
+        const panel = 
+        document.createElement('div');
+        // create a div element and store a reference to it in the constant called panel 
+        // will be the outer container of our message box 
+        panel.setAttribute('class','msgBox');
+        // element.setAttribute() 
+        // to set a class attribute on our panel with a value of msgBox
+    
+        body.appendChild(panel);
+        // node.appendChild() on the body constant from earlier
+        // nests one element inside the other as a child of it 
+        // specify the panel <div> as the child we want to append inside the body element 
+        // need to specify where to put the element (wont appear on its own)
+
+        const msg = document.createElement('p');
+        // insert the <p> in the page as children of the panel <div>
+        msg.textContent = msgText;
+        // node.textContent = represents the text content of an element 
+        // insert the message inside the paragraph
+        // msgText = first parameter 
+        panel.appendChild(msg);
+
+        const closeBtn = 
+        document.createElement('button');
+        closeBtn.textContent = 'x';
+        // insert an "x" inside the button 
+        panel.appendChild(closeBtn);
+
+        closeBtn.addEventListener('click',() => panel.parentNode.removeChild(panel));
+        // when the user clicks the "close" button a function will be called 
+        //node.removeChild(div)
+
+        if (msgType === 'warning'){
+            // if the msgType parameter is set as 'warning' then the {} will run
+            msg.style.backgroundImage = 'url (warning.png)';
+            panel.style.backgroundColor = 'red';
+        } else if (msgType === 'chat'){
+            msg.style.backgroundImage = 'url(chat.png)';
+            panel.style.backgroundColor = 'aqua';
+        } else{
+            msg.style.paddingLeft = '20px';
+            // if the msgType parameter is not set at all then the else code will run which gets rid of the icon and background colors (default setup)
+        }
+
+      }
+    </script>
+  </body>
+</html>
