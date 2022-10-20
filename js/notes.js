@@ -131,5 +131,13 @@ select.addEventListener('change', () => select.value === 'black'
   : update('white', 'black')
 );
 }
+// arrow and anonymous funciton example
+
+const textBox=
+document.querySelector("#textBox");
+const output = 
+document.querySelector("#output");
+
+textBox.addEventListener('keydown',(event)=> output.textContent =`You pressed "${event.key}."`);
 
 
