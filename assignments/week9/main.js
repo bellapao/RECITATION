@@ -5,10 +5,10 @@ const btn = document.querySelector('button');
 const overlay = document.querySelector('.overlay');
 
 /* Declaring the array of image filenames */
-const pics =['pic1.jpeg', 'pic2.jpeg', 'pic3.jpeg', 'pic4.jpeg', 'pic5.jpeg'];
+const images =['pic1.jpeg', 'pic2.jpeg', 'pic3.jpeg', 'pic4.jpeg', 'pic5.jpeg'];
 
 /* Declaring the alternative text for each image file */
-const text = {
+const alts = {
     'pic1.jpeg':'picnic at the farmer market',
     'pic2.jpeg':'Maggie on Farrand Feild with a cowboy hat',
     'pic3.jpeg':'light leak on a pic of Jan and Cece in the parking lot',
@@ -17,17 +17,15 @@ const text = {
 }
 
 /* Looping through images */
-for (const i in pics) {
-const newImage = document.createElement('img');
-newImage.setAttribute('src', `pics/${i}`);
-newImage.setAttribute('alt', text[i]);
-thumbBar.appendChild(newImage);
-
-newImage.addEventListener('click', bam => {
-    displayedImage.src = bam.target.src;
-    displayedImage.alt = bam.target.alt;
-}
- );
+for (const image of images) {
+  const newImage = document.createElement('img');
+  newImage.setAttribute('src', `images/${image}`);
+  newImage.setAttribute('alt', alts[image]);
+  thumbBar.appendChild(newImage);
+  newImage.addEventListener('click', e => {
+    displayedImage.src = e.target.src;
+    displayedImage.alt = e.target.alt;
+  });
 }
 
 /* Wiring up the Darken/Lighten button */
