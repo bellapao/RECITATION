@@ -20,10 +20,15 @@ const text = {
 for (const pic of images) {
   const newImage = document.createElement('img');
   newImage.setAttribute('src', `images/${pic}`);
+  // setAttribute(name,value)
   newImage.setAttribute('alt', text[pic]);
   thumbBar.appendChild(newImage);
+
+  //add a click event listener to each thumbnail image
   newImage.addEventListener('click', bam => {
     displayedImage.src = bam.target.src;
+    //find the value of the sc attribute of the current image 
+    // set the arc attribute vaalue of the displayed image to the src value passed in as a parameter 
     displayedImage.alt = bam.target.alt;
   });
 }
@@ -34,7 +39,7 @@ btn.addEventListener('click', () => {
     if (btnClass === 'dark') {
       btn.setAttribute('class','light');
       btn.textContent = 'Lighten';
-      overlay.style.backgroundColor = 'rgba(0,0,0,0.8)';
+      overlay.style.backgroundColor = 'rgba(0,0,0,0.5)';
     } else {
       btn.setAttribute('class','dark');
       btn.textContent = 'Darken';
