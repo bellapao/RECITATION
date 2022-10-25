@@ -6,6 +6,7 @@ const overlay = document.querySelector('.overlay');
 
 /* Declaring the array of image filenames */
 const images =['pic1.jpeg', 'pic2.jpeg', 'pic3.jpeg', 'pic4.jpeg', 'pic5.jpeg'];
+// const needs to be the name of the file that stores the pics
 
 /* Declaring the alternative text for each image file */
 const text = {

@@ -39,24 +39,39 @@
     .then(text => displayCatInfo(text))
 
     function displayCatInfo(catString) {
+      // function (parameter)
+      // catString =JSON?
       let total = 0;
       let male = 0;
 
       // Add your code here
       const cats = JSON.parse(catString);
+      //parse the object to make is usable in code 
 
       for (let i = 0; i < cats.length; i++) {
+        // for every i from zero to the length of cats (length of cats = mother cats)
+        // for every cat we have, do 
     for (const kitten of cats[i].kittens) {
+      // for every kitten of every mother cat, 
       total++;
+      // add 1 to the total 
       if (kitten.gender === 'm') {
         male++;
+        // what gender?
+        // if its m, its a male
       }
+      // keeping track of total and keeping track of males 
     }
 
     if (i < (cats.length - 1)) {
+      //adding mother cat names to a string
+      // if .... use a comma in between the mother names 
       motherInfo += `${ cats[i].name }, `;
+      // i is the number 
+      //[i]. name = mother cat name 
     } else {
       motherInfo += `and ${ cats[i].name }.`;
+       // else its the last cat than you add an "and" (instead of a comma)
     }
   }
 
