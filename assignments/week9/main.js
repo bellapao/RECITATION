@@ -27,8 +27,8 @@ for (const pic of images) {
   //add a click event listener to each thumbnail image
   newImage.addEventListener('click', bam => {
     displayedImage.src = bam.target.src;
-    //find the value of the sc attribute of the current image 
-    // set the arc attribute vaalue of the displayed image to the src value passed in as a parameter 
+    //find the value of the src attribute of the current image 
+    //set the src attribute value of the displayed image to the src value passed in as a parameter 
     displayedImage.alt = bam.target.alt;
   });
 }
