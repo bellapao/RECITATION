@@ -3,10 +3,10 @@ async function populate() {
 
   const requestURL = 'https://mdn.github.io/learning-area/javascript/oojs/json/superheroes.json';
   const request = new Request(requestURL);
-  //initialize a new Request object?
+  //initialize a new Request object
 
   const response = await fetch(request);
-  // make the network request using the fetch() function, and this returns a response object?
+  // make the network request using the fetch() function, and this returns a response object
   const superHeroes = await response.json();
 
 
