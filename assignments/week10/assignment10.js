@@ -52,7 +52,10 @@ console.log(companyInfo);
 
 // Problem 4: total salary 
 var totalSalary = (
-(Sam.salary)+(Mary.salary)+(Bill.salary)+(Anna.salary) 
+    string0 = (Sam["salary"]),
+    string1 = (Mary["salary"]),
+    string2 = (Bill["salary"]),
+    string3 = (Anna["salary"])
 );
 console.log(totalSalary);
 
