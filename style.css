@@ -152,6 +152,7 @@ body {
   margin: 10px;
 }
 
+
 .box p {
   margin-left: 2em;
   grid-column-start: 2;
@@ -168,6 +169,9 @@ body {
 @media only screen and (min-width: 599px)and (max-width:999px){
   body{
     background-color: #A32015;
+  }
+  .Home img{
+    width: 32%
   }
   .Bella{
     font-size: 3rem;
