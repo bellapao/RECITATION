@@ -4,7 +4,7 @@ var Sam = {
     "name": "Sam",
     "department":"Tech",
     "designation": "Manager",
-    "salary":"40000",
+    "salary":40000,
     "raise eligible": "true"
 }
 var Mary = {
@@ -43,7 +43,7 @@ var Anna =
       "department":"Tech",
       "designation":"Executive",
       "salary":"25600",
-      "raiseEligible":"false",
+      "raise eligible":"false"
     }
 console.log(Anna)
 
@@ -64,6 +64,23 @@ console.log(totalSalary);
 Given the JSON of the company and its employees, write a function to update the salary for each employee who is raised eligible, 
 then set their eligibility to false. */
 
+console.log(companyInfo['employees'][0])
+
+function raiseTime(employeeInfo) {
+    let salary = employeeInfo['salary'];
+    let raise = employeeInfo['raise eligible'];
+
+    if (raise == 'true') {
+        salary = salary * 1.1;
+        raise = 'false';
+    }
+
+    console.log(salary);
+    console.log(raise);
+}
+
+raiseTime(companyInfo['employees'][0]);
+console.log(companyInfo['employees'][0])
 
 //Problem 6: 
 /*
@@ -74,6 +91,9 @@ Use the array to update the company JSON.
 For each employee, add another property called 'wfh' and set it to true or false
 Working from home: ['Anna', 'Sam']
 
+
+
+notes: 
 object = {
    "" name:{
         "haha":"value",
