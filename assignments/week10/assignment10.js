@@ -11,14 +11,14 @@ var Mary = {
     "name":"Mary",
     "department":"Finance",
     "designation":"Trainee",
-    "salary":"18500",
+    "salary":18500,
     "raise eligible":"true"
 }
 var Bill = {
     "name":"Bill",
     "department":"HR",
     "designation":"Executive",
-    "salary":"21200",
+    "salary":21200,
     "raise eligible":"false"
 }
 console.log (Sam);
@@ -42,7 +42,7 @@ var Anna =
       "name":"Anna",
       "department":"Tech",
       "designation":"Executive",
-      "salary":"25600",
+      "salary":25600,
       "raise eligible":"false"
     }
 console.log(Anna)
@@ -77,10 +77,13 @@ function raiseTime(employeeInfo) {
 
     console.log(salary);
     console.log(raise);
+    return;
 }
 
 raiseTime(companyInfo['employees'][0]);
-console.log(companyInfo['employees'][0])
+raiseTime(companyInfo['employees'][1]);
+raiseTime(companyInfo['employees'][2]);
+raiseTime(companyInfo['employees'][3]);
 
 //Problem 6: 
 /*
