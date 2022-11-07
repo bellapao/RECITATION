@@ -17,6 +17,8 @@ async function getQuote(){
     displayQuote(jsonResponse['message']);
 }
 
+let image = document.getElementById('image');
+
 function displayQuote(x){
     // const quoteBox = document.querySelector('#js-quote-text');
     // console.log('quote works!')
@@ -25,9 +27,9 @@ function displayQuote(x){
 
     // quoteBox.appendChild(textMessage);
 
-    document.getElementById('js-quote-text').textContent = x;
-
+    document.getElementById('js-quote-text').image = x;
     // how to make the link an image that displays on screen?
-    // var img = document.createElement('img');
-    // document.getElementById('js-quote-text').appendChild(img) = x;
+    //var img = document.createElement('img');
+    //document.getElementById('js-quote-text').appendChild(img) = x;
+    image.src = x;
 }
