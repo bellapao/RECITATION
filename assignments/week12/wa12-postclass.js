@@ -2,7 +2,7 @@ function check() {
   console.log ('test');
 }
 
-function submit () {
+function submit() {
   alert(output.textContent);
 }
 
@@ -21,7 +21,7 @@ function plus () {
   if (outputInt < 9999999999) {
       outputInt += 1;
       output.textContent = outputInt; 
-      //utput.textContent = output.textContent + 1
+      //output.textContent = output.textContent + 1
   }
 }
 
@@ -42,7 +42,7 @@ let outputInt = parseInt(output.textContent);
 
 
 const minusButton = document.querySelector ('.minus-button').addEventListener('click',minus);
-const plussButton = document.querySelector ('.plus-button').addEventListener('click',plus);
+const plusButton = document.querySelector ('.plus-button').addEventListener('click',plus);
 const resetButton = document.querySelector ('.reset-button').addEventListener('click',reset);
 const randomButton = document.querySelector ('.random-button').addEventListener('click',random);
 const submitButton = document.querySelector ('.submit-button').addEventListener('click',submit);
@@ -69,3 +69,4 @@ output.innerHTML = slider.value; // Display the default slider value
 slider.oninput = function() {
 output.innerHTML = this.value;
 }
+const submitButton2 = document.querySelector ('.sldier-submit-button').addEventListener('click',submit);
