@@ -30,7 +30,7 @@ function random () {
   output.textContent = outputInt;
 }
 
-
+// generating a random number between min and max values 
 function randomNumber (min, max) {
   const num = Math.floor(Math.random() - (max-min+1)) + min; 
   return num;
@@ -38,7 +38,7 @@ function randomNumber (min, max) {
 
 const output = document.querySelector('.output'); 
 let outputInt = parseInt(output.textContent);
-//console.log (outputInt);
+console.log (outputInt);
 
 
 const minusButton = document.querySelector ('.minus-button').addEventListener('click',minus);
