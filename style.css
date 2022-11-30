@@ -53,14 +53,14 @@ header nav {
   padding: .5em;
   display: flex;
   justify-content: space-evenly;
-  width: 150%;
+  width: 100%;
 
 }
 header nav a {
   display:inline-block;
   color: #607069;
   text-decoration: none;
-  padding: .5em 1em;
+  padding: .5em 2em;
   font-family: bebas neue;
   font-size: 1.5em;
 }
@@ -135,6 +135,15 @@ footer a:active{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  gap: 5px;
+}
+
+.photographyIndex {
+  padding-top: 50px;
+  display:flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 
@@ -166,13 +175,11 @@ body {
 }
 }
 
-@media only screen and (min-width: 599px)and (max-width:999px){
+@media only screen and (min-width: 599px)and (max-width:1180px){
   body{
     background-color: #A32015;
   }
-  .Home img{
-    width: 32%
-  }
+
   .Bella{
     font-size: 3rem;
     padding: 0;
