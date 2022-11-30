@@ -224,6 +224,7 @@ body {
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      gap: 8px;
     }
     .Bella{
       font-size: 4rem;
