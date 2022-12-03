@@ -1,3 +1,4 @@
+//keyframe as an Array 
 const aliceTumbling = [
     { transform: "rotate(0) scale(1)" },
     { transform: "rotate(360deg) scale(0)" },
@@ -15,6 +16,7 @@ const aliceTumbling = [
 
   //this is for the first one//
   alice1.animate(aliceTumbling, aliceTiming);
+  // .animate will make an animation on selected ___ using the keyframes called 
 
   //for the rest of then=m//
   alice1.animate(aliceTumbling, aliceTiming).finished
@@ -22,7 +24,7 @@ const aliceTumbling = [
   .then(() => alice3.animate(aliceTumbling, aliceTiming).finished);
 
 
-
+  /*
   function tumbleAlice () {
     const animateObject = alice1.animate(aliceTumbling, aliceTiming);
     let intverval = 2001;
@@ -48,4 +50,5 @@ function tumbleAliceThen() {
           });
       });      
   };
-  
+  */
+ 
