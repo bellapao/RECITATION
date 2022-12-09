@@ -1,7 +1,7 @@
 .canvas{
     width: 600px;
     height: 500px;
-    margin: 50px auto;
+    margin: 40px auto;
     text-align: center;
     box-sizing: border-box;
 }
@@ -17,3 +17,29 @@
     background: url('lighton.png');
     margin: auto;
 }
+.discoball{
+    width: 200px;
+    height: auto;
+}
+
+.disc{
+    width: 250px;
+    height: auto;
+}
+
+@keyframes move-right {
+    from {
+      left: 10%;
+    }
+  
+    to {
+      left: 90%;
+    }
+  }
+  
+  li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }

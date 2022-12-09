@@ -1,19 +1,60 @@
 const light = document.getElementById('bulb');
+
+
+//spin
+const discoRotate = [
+  {transform: "rotateY(90deg)", easing:'ease-in'
+},
+  {transform: "rotateY(0deg)"},
+  {transform: "rotateY(90deg)"},
+  {transform: "rotateY(0deg)"},
+  {transform: "rotateY(90deg)", easing: 'ease-out'
+},
+]
+
+const discoTiming = {
+  duration: 3000,
+  iterations: Infinity,
+  fill: "forwards",
+};
+
+const discoball = document.querySelector("#discoTest");
+light.addEventListener('click', () => {
+  const discotimeline = discoball.animate(discoRotate, discoTiming,);
+});
+
+
+const discRotate = [
+  {transform: "rotateZ(360deg)" },
+  {transform: "rotateZ(0deg)"},
+]
+//divElem.style.animationName = 'move-right';
+
+const discball = document.querySelector("#disc");
+
+light.addEventListener('click', () => {
+  disc.animate(discRotate, discoTiming,);
+});
+
+
+
+//click bulb on => toggle  bulb-off => finish animation
+
+light.addEventListener('click',()=> {
+  document.querySelector("body").animate({
+    backgroundColor: [ "red", "yellow", "green","pink","turquoise" ],}, 
+    3000,
+    );
+})
+
+
 light.addEventListener('click',function(e){
    
     e.target.classList.toggle('bulb-on');
+    if (e.target.classList.includes('bulb-on')){
+    discotimeline.stop()
+    }
 })
 
-// toggle(token) => token is a string representing the token you want to toggle 
-// toggle (token,force) => turns the toggle into a one-way only operation 
-
-/*  using element.classList
-
-const span = document.querySelector("bulb");
-const classes = bulb.classList;
-
-bublb.addEventListener('click',() => {
-  const result = classes.toggle("c");
-  span.textContent = `'c' ${result ? "added" : "removed"}; classList is now "${classes}".`; 
-})
-*/
+//animation.cancel()
+//animation.pause()
