@@ -1,15 +1,12 @@
 const light = document.getElementById('bulb');
 
 
-//spin
 const discoRotate = [
-  {transform: "rotateY(90deg)", easing:'ease-in'
-},
+  {transform: "rotateY(90deg)", easing:'ease-in'},
   {transform: "rotateY(0deg)"},
   {transform: "rotateY(90deg)"},
   {transform: "rotateY(0deg)"},
-  {transform: "rotateY(90deg)", easing: 'ease-out'
-},
+  {transform: "rotateY(90deg)", easing: 'ease-out'},
 ]
 
 const discoTiming = {
@@ -20,7 +17,7 @@ const discoTiming = {
 
 const discoball = document.querySelector("#discoTest");
 light.addEventListener('click', () => {
-  const discotimeline = discoball.animate(discoRotate, discoTiming,);
+  var discotimeline = discoball.animate(discoRotate, discoTiming,);
 });
 
 
@@ -28,22 +25,26 @@ const discRotate = [
   {transform: "rotateZ(360deg)" },
   {transform: "rotateZ(0deg)"},
 ]
-//divElem.style.animationName = 'move-right';
+const discRotate2 = [
+  {transform: "rotateZ(-360deg)"},
+  {transform: "rotateZ(0deg)"},
+]
 
-const discball = document.querySelector("#disc");
+const disc = document.querySelector("#disc");
+const disc2 = document.querySelector("#disc2");
 
 light.addEventListener('click', () => {
   disc.animate(discRotate, discoTiming,);
+  disc2.animate(discRotate2,discoTiming);
+  //document.getElementById("disc").style.animationName = 'move-right';
 });
 
 
-
-//click bulb on => toggle  bulb-off => finish animation
-
 light.addEventListener('click',()=> {
-  document.querySelector("body").animate({
-    backgroundColor: [ "red", "yellow", "green","pink","turquoise" ],}, 
-    3000,
+  var background = 
+    document.querySelector("body").animate({
+    backgroundColor: ["red", "yellow", "green","pink","turquoise","purple"],},
+    discoTiming,
     );
 })
 
@@ -56,5 +57,6 @@ light.addEventListener('click',function(e){
     }
 })
 
-//animation.cancel()
-//animation.pause()
+
+
+
