@@ -34,7 +34,7 @@ light.addEventListener('click', () => {
   var disc2timeline = disc2.animate(discRotate2,discoTiming);
   var background = 
     document.querySelector("body").animate({
-    backgroundColor: ["red", "yellow", "green","pink","turquoise","purple","#f0ffff"],},
+    backgroundColor: ["pink","red", "yellow", "green","turquoise","purple","pink","#f0ffff"],},
     discoTiming,
     );
   var audio = new Audio ("BoogieWonderland.mp3"); audio.play()
