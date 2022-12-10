@@ -10,7 +10,7 @@ const discoRotate = [
 
 const discoTiming = {
   duration: 3000,
-  iterations: 98,
+  iterations: 95,
   fill: "forwards",
 };
 
