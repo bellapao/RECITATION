@@ -27,27 +27,42 @@ const discoball = document.querySelector("#discoTest");
 const disc = document.querySelector("#disc");
 const disc2 = document.querySelector("#disc2");
 
+var audio = new Audio ("BoogieWonderland.mp3"); 
+//audio.play()
 
-light.addEventListener('click', () => {
-  var discotimeline = discoball.animate(discoRotate, discoTiming,);
-  var disctimeline = disc.animate(discRotate, discoTiming,);
-  var disc2timeline = disc2.animate(discRotate2,discoTiming);
-  var background = 
-    document.querySelector("body").animate({
-    backgroundColor: ["pink","red", "yellow", "green","turquoise","purple","pink","#f0ffff"],},
-    discoTiming,
-    );
-  var audio = new Audio ("BoogieWonderland.mp3"); audio.play()
+var count = 0;
+
+light.addEventListener('click',function(e){
+  e.target.classList.toggle('bulb-on');
+  if (count == 0){
+    count = 1;
+    audio.play();
+    var discotimeline = discoball.animate(discoRotate, discoTiming,);
+    var disctimeline = disc.animate(discRotate, discoTiming,);
+    var disc2timeline = disc2.animate(discRotate2,discoTiming);
+    var background = document.querySelector("body").animate({
+      backgroundColor: ["pink","red", "yellow", "green","turquoise","purple","pink","#f0ffff"],},
+      discoTiming,);
+  }
+  else{
+    count = 0;
+    audio.pause();
+    discotimeline.pause();
+    discotimeline.pause();
+    disc2timeline.pause();
+    background.pause()
+  }
 });
 
 
-let toggle = light.addEventListener('click',function(e){
+/*
+light.addEventListener('click',function(e){
    e.target.classList.toggle('bulb-on');
     //if (e.target.classList.includes('bulb-on')){
     //discotimeline.pause()}
 });
 
-/*
+
 let lightstate = False;
 function lightToggle(){
   if (lightState == False){
