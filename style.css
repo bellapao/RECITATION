@@ -151,11 +151,74 @@ footer a:active{
   text-align: center;
 }
 
-
 .caption-text {
   position: absolute;
   top: 50%;
   color: white;
+}
+/* Photography Hover ---------------------------------------------------------------------------- */
+
+.holder {
+  position: relative;
+}
+
+.holder:hover .overlay {
+  opacity: 1;
+}
+
+.thumbnail {
+  display: block;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #A2BDB1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* Expanding image text */
+#imgtext {
+  position: absolute;
+  bottom: 20px;
+  left: 75px;
+  color: white;
+  font-size: 20px;
+  font-family: 'bebas neue', sans-serif;
+}
+
+/* Closable button inside the image */
+.closebtn {
+  position: absolute;
+  top: 20px;
+  right: 105px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+
+#expandedImg {
+  width: 91%;
+  height: 91%;
+  margin-left: 52px;
 }
 
 @media only screen and (min-width: 1000px ){
