@@ -1,14 +1,14 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Caveat:wght@400;500&family=Manrope&family=Noto+Sans+TC:wght@400;500&family=Permanent+Marker&family=Urbanist:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Antonio&family=Bebas+Neue&family=Manrope&family=Permanent+Marker&family=Sorts+Mill+Goudy&family=Urbanist:wght@300&display=swap");
 h1 {
     font-family: bebas neue;
 }
 h2{
-  font-family: Caveat;
+  font-family: 'Sorts Mill Goudy', serif;
 }
 p {
-    font-family: 'Manrope';
-    font-size: 1.2em;
+  font-family: manrope;
+  font-size: 1.2em;
 }
 
 header {
