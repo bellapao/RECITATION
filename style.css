@@ -110,8 +110,9 @@ footer a:active{
 }
 .contents ul{
   list-style: none;
-  font-family: Anton;
+  font-family: bebas neue;
   font-size: 2rem;
+  text-decoration: none;
 }
 .container{
   display: flex;
