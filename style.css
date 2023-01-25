@@ -140,7 +140,13 @@ footer a:active{
   color: white;
 }
 /* Photography Hover ---------------------------------------------------------------------------- */
-
+.photographyIndex{
+  margin: 0 auto;
+    padding: 50px 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+}
 .holder {
   position: relative;
 }
@@ -151,6 +157,7 @@ footer a:active{
 
 .thumbnail {
   display: block;
+  max-width: 100%;
 }
 
 .overlay {
