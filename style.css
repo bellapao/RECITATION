@@ -237,7 +237,7 @@ header {
 .nav {
   width: 100%;
 }
-/*
+
 @media only screen and (min-width: 599px)and (max-width:1269px){
   body{
     background-color: #CFF0E1;
@@ -277,7 +277,7 @@ header {
   grid-row-start: 2;
  }
 }
-*/
+
 @media only screen and (max-width: 600px ){
     body{
         background-color: #607069;
