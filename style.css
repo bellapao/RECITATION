@@ -2,9 +2,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Antonio&family=Bebas+Neue&family=Manrope&family=Permanent+Marker&family=Sorts+Mill+Goudy&family=Urbanist:wght@300&display=swap");
 h1 {
     font-family: bebas neue;
+    text-align: center;
 }
 h2{
   font-family: 'Sorts Mill Goudy', serif;
+  text-align: center;
 }
 p {
   font-family: manrope;
