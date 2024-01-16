@@ -80,12 +80,9 @@ footer a:active{
 /*About*/
 .box{
   background: #a2bdb1;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  border-radius: 18px;
+  display: flex;
+  max-width:100%;
+  margin:auto
 }
 .disco{
   grid-column-start: 3;
@@ -257,7 +254,10 @@ header {
     padding: .5em;
   }
  .box{
-  background-color: #f0ffff;}
+  background-color: #f0ffff;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
   .box p{
     padding-left: 1em;
   }
