@@ -103,7 +103,8 @@ footer a:active{
 }
 .info{
   grid-column-start: 2;
-  margin-left: 1rem;
+  margin-left: 10rem;
+  margin-right: 10rem;
 }
 .info a{
   color: black;
